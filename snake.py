@@ -1,6 +1,6 @@
 from turtle import Turtle
 
-UP = 9111111
+UP = 90
 DOWN = 270
 LEFT = 180
 RIGHT = 0
