@@ -1,6 +1,6 @@
 from turtle import Turtle
 
-class Scoreboard(Turtle):
+class UserInterface(Turtle):
 
     def __init__(self):
         super().__init__()
@@ -16,3 +16,7 @@ class Scoreboard(Turtle):
         self.score += 1
         self.clear()
         self.write(f"Score: {self.score}", align = "center", font = ("Arial", 20, "normal"))
+
+    def game_over_appear(self):
+        self.goto(0,0)
+        self.write("Game Over", align="center", font=("Arial", 20, "normal"))

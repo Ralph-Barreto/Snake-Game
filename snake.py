@@ -23,6 +23,9 @@ class Snake:
         snake_part.speed("fastest")
         self.snake_body.append(snake_part)
 
+    def extend(self):
+        self.create_snake_part(self.snake_body[-1].position())
+
     def create_snake(self):
         for s in INITIAL_COORDINATES:
             self.create_snake_part(s)
@@ -49,3 +52,4 @@ class Snake:
     def right(self):
         if self.head.heading() != LEFT:
             self.head.setheading(RIGHT)
+
